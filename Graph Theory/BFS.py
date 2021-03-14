@@ -21,7 +21,7 @@ def solve(source, visited, graph):
     return (visited)
 
 
-def bfs(source, destination, graph):
+def bfs(source, graph):
     visited = []
     visited = solve(source, visited, graph)
     print(visited)
@@ -36,4 +36,4 @@ G.addItemDirected('A', 'F')
 
 G.printGraph()
 
-bfs('A', 'D', G.graph)
+bfs('A', G.graph)
